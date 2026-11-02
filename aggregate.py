@@ -6,13 +6,14 @@ import os, sys, base64
 import requests
 import yaml
 
-UA = {"User-Agent": "ClashMeta/1.18"}
+UA_DEFAULT = "ClashMeta/1.18"
+UA_BY_IDX = {3: "ClashMetaForAndroid/2.11.36.Meta"}  # 第三家绑定客户端，只认 CMFA 身份
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out", "all.yaml")
 
 
 def fetch_proxies(idx, url):
     try:
-        r = requests.get(url, headers=UA, timeout=30)
+        r = requests.get(url, headers={"User-Agent": UA_BY_IDX.get(idx, UA_DEFAULT)}, timeout=30)
         r.raise_for_status()
         text = r.text
     except Exception as e:
@@ -51,7 +52,8 @@ def main():
             # （server 127.0.0.1、名字是「订阅链接不兼容/联系客服」之类的整句提示），不能混进聚合
             _nm = str(p.get("name"))
             if str(p.get("server")) in ("127.0.0.1", "localhost") or any(
-                    k in _nm for k in ("订阅链接", "不兼容", "客服", "请复制", "导入客户端")):
+                    k in _nm for k in ("订阅链接", "不兼容", "客服", "请复制", "导入客户端",
+                                      "剩余流量", "下次重置", "套餐到期")):
                 print(f"[{idx}] 跳过占位节点：{_nm}")
                 continue
             p = dict(p)
