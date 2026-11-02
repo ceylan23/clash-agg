@@ -47,6 +47,13 @@ def main():
         for p in fetch_proxies(idx, url):
             if not isinstance(p, dict) or not p.get("name"):
                 continue
+            # 商店占位节点过滤：有些订阅商店对不匹配的拉取方式只返回提示语假节点
+            # （server 127.0.0.1、名字是「订阅链接不兼容/联系客服」之类的整句提示），不能混进聚合
+            _nm = str(p.get("name"))
+            if str(p.get("server")) in ("127.0.0.1", "localhost") or any(
+                    k in _nm for k in ("订阅链接", "不兼容", "客服", "请复制", "导入客户端")):
+                print(f"[{idx}] 跳过占位节点：{_nm}")
+                continue
             p = dict(p)
             p["name"] = f"[{idx}] {p['name']}"
             key = (p["name"], str(p.get("server")), str(p.get("port")), str(p.get("type")))
