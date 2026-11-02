@@ -1,0 +1,41 @@
+name: aggregate-subscriptions
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+  push:
+    paths:
+      - ".github/workflows/aggregate.yml"
+      - "aggregate.py"
+
+permissions:
+  contents: write
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install pyyaml requests
+      - name: Merge subscriptions
+        env:
+          SUB_URL_1: ${{ secrets.SUB_URL_1 }}
+          SUB_URL_2: ${{ secrets.SUB_URL_2 }}
+          SUB_URL_3: ${{ secrets.SUB_URL_3 }}
+        run: python aggregate.py
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add out/all.yaml
+          if git diff --cached --quiet; then
+            echo "无变化，不提交"
+          else
+            git commit -m "chore: refresh aggregated subscription"
+            git push
+          fi
