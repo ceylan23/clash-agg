@@ -1,0 +1,482 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: '[1] 🇭🇰 香港A01'
+  server: y.g.w.c.z.y.a.e.d.hk01-ae5.entry.v51124-5.qpon
+  port: 19275
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇯🇵 日本A01 | IEPL'
+  server: 5.g.w.3.z.y.n.e.d.jp01-ae5.entry.v51124-5.qpon
+  port: 476
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇭🇰 香港A02 | IEPL'
+  server: b.d.h.3.4.u.6.e.d.hk02-ae5.entry.v51124-5.qpon
+  port: 14563
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇯🇵 日本A02 | IEPL'
+  server: y.d.w.3.v.y.2.e.d.jp02-ae5.entry.v51124-5.qpon
+  port: 486
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇭🇰 香港A03 | IEPL'
+  server: y.g.h.c.v.u.n.e.d.hk03-ae5.entry.v51124-5.qpon
+  port: 763
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇯🇵 日本A03 | IEPL'
+  server: y.d.w.h.v.t.a.e.d.jp03-ae5.entry.v51124-5.qpon
+  port: 491
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇭🇰 香港A04 | IEPL'
+  server: y.4.o.3.v.t.n.e.d.hk04-ae5.entry.v51124-5.qpon
+  port: 807
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇯🇵 日本A04 | IEPL'
+  server: 5.4.w.h.4.u.2.e.d.jp04-ae5.entry.v51124-5.qpon
+  port: 496
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇭🇰 香港A05 | IEPL'
+  server: 5.g.w.c.z.y.n.e.d.hk05-ae5.entry.v51124-5.qpon
+  port: 1815
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇯🇵 日本A05 | 下载专用 | x0.01'
+  server: 5dh3zya.g05.jp05-vm5.entry.rtysjur.quest
+  port: 64658
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: '[1] 🇭🇰 香港A06 | x0.8'
+  server: 5.d.w.c.z.u.2.e.d.hk06-ae5.entry.v51124-5.qpon
+  port: 1416
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇯🇵 日本A06 | 下载专用 | x0.01'
+  server: 5ghhvya.g05.jp06-vm5.entry.rtysjur.quest
+  port: 666
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: '[1] 🇭🇰 香港A07 | x0.8'
+  server: b.d.h.c.4.u.2.e.d.hk07-ae5.entry.v51124-5.qpon
+  port: 1423
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇯🇵 日本A07 | IEPL'
+  server: 5.4.w.h.z.y.6.e.d.jp07-ae5.entry.v51124-5.qpon
+  port: 14008
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇭🇰 香港A08 | x0.8'
+  server: 5.4.o.c.4.u.n.e.d.hk08-ae5.entry.v51124-5.qpon
+  port: 18646
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇯🇵 日本A08 | IEPL'
+  server: 5.g.o.h.v.u.a.e.d.jp08-ae5.entry.v51124-5.qpon
+  port: 12546
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇭🇰 香港A09 | IEPL'
+  server: b.d.o.3.z.u.n.e.d.hk09-vm5.entry.v51124-5.qpon
+  port: 15268
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: '[1] 🇯🇵 日本A09 | IEPL'
+  server: y.4.o.3.v.u.6.e.d.jp09-ae5.entry.v51124-5.qpon
+  port: 11161
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇭🇰 香港A10 | IEPL'
+  server: b.d.h.3.v.y.6.e.d.hk10-vm5.entry.v51124-5.qpon
+  port: 13486
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: speedtest-bgp-01-10.entry-0.chinasnow.net
+  udp: true
+- name: '[1] 🇯🇵 日本A10 | IEPL'
+  server: b.4.o.h.z.t.n.e.d.jp10-ae5.entry.v51124-5.qpon
+  port: 16527
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇭🇰 香港A11 | IEPL'
+  server: b.g.w.c.z.u.n.e.d.hk11-vm5.entry.v51124-5.qpon
+  port: 578
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tutorial/iphone13.m3u8
+    headers:
+      Host: speedtest-bgp-01-11.entry-0.chinasnow.net
+  udp: true
+- name: '[1] 🇯🇵 日本A11 | IEPL'
+  server: 5.4.w.c.z.y.a.e.d.jp11-ae5.entry.v51124-5.qpon
+  port: 17744
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇸🇬 新加坡A01 | IEPL | x2'
+  server: 5.g.w.3.4.t.6.e.d.sg01-ae5.entry.v51124-5.qpon
+  port: 20003
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇸🇬 新加坡A02 | IEPL | x2'
+  server: 5.4.w.h.z.u.n.e.d.sg02-ae5.entry.v51124-5.qpon
+  port: 20078
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇸🇬 新加坡A03 | IEPL | x2'
+  server: b.d.w.3.z.t.n.e.d.sg03-ae5.entry.v51124-5.qpon
+  port: 20083
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇨🇳 台湾A01 | IEPL | x2'
+  server: b.4.h.h.z.u.n.e.d.tw01-ae5.entry.v51124-5.qpon
+  port: 20008
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇺🇲 美国A01 | IEPL | x1.5'
+  server: 5.4.o.3.z.u.a.e.d.us01-ae5.entry.v51124-5.qpon
+  port: 20013
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇺🇲 美国A02 | IEPL | x1.5'
+  server: b.g.o.c.4.t.a.e.d.us02-ae5.entry.v51124-5.qpon
+  port: 20018
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇬🇧 英国A01'
+  server: y.4.h.c.4.u.n.e.d.gb01-ae5.entry.v51124-5.qpon
+  port: 20023
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇦🇷 阿根廷A01'
+  server: y.4.o.h.z.u.2.e.d.ar01-ae5.entry.v51124-5.qpon
+  port: 20028
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇷🇺 俄罗斯A01'
+  server: y.d.o.3.z.t.a.e.d.ru01-ae5.entry.v51124-5.qpon
+  port: 20033
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇹🇷 土耳其A01'
+  server: 5.d.h.c.v.y.a.e.d.tr01-ae5.entry.v51124-5.qpon
+  port: 20038
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇰🇷 韩国A01'
+  server: b.g.w.3.4.t.a.e.d.kr01-ae5.entry.v51124-5.qpon
+  port: 20043
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇮🇳 印度A01'
+  server: b.g.w.3.4.t.a.e.d.in01-ae5.entry.v51124-5.qpon
+  port: 20048
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇩🇪 德国A01'
+  server: 5.4.w.h.v.u.2.e.d.de01-ae5.entry.v51124-5.qpon
+  port: 20053
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇨🇦 加拿大A01'
+  server: y.4.h.h.z.t.a.e.d.ca01-ae5.entry.v51124-5.qpon
+  port: 20058
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇦🇺 澳大利亚A01'
+  server: y.g.w.c.z.y.a.e.d.au01-ae5.entry.v51124-5.qpon
+  port: 20063
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇫🇷 法国A01'
+  server: b.g.w.c.z.y.6.e.d.fr01-ae5.entry.v51124-5.qpon
+  port: 20068
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇺🇦 乌克兰A01'
+  server: b.d.w.c.4.u.2.e.d.ua01-ae5.entry.v51124-5.qpon
+  port: 20073
+  type: ss
+  cipher: aes-256-gcm
+  password: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  udp: true
+- name: '[1] 🇯🇵 免费-日本1-Ver.7'
+  server: bgoh4t6-g05.jp01-nn-vm0.entry.fr0528.art
+  port: 21585
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+- name: '[1] 🇯🇵 免费-日本2-Ver.8'
+  server: ygh34ya-g05.jp02-e3-vm0.entry.fr0528.art
+  port: 11777
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: '[1] 🇯🇵 免费-日本3-Ver.7'
+  server: b4hhzt6-g05.jp03-j7-vm0.entry.fr0528.art
+  port: 21585
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+- name: '[1] 🇯🇵 免费-日本4-Ver.8'
+  server: 54hhvya-g05.jp04-1d-vm0.entry.fr0528.art
+  port: 448
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: '[1] 🇯🇵 免费-日本5-Ver.9'
+  server: 5dhh4u6-g05.jp05-h6-vm0.entry.fr0528.art
+  port: 46486
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: '[1] 🇯🇵 免费-日本6-Ver.8'
+  server: bgoh4u6-g05.jp06-jz-vm0.entry.fr0528.art
+  port: 28787
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+- name: '[1] 🇯🇵 免费-日本7-Ver.2'
+  server: bghhvya-g05.jp07-sh-vm0.entry.fr0528.art
+  port: 28787
+  type: vmess
+  uuid: 9d8f5e99-b5d6-33e3-9843-c6e1dbfd6558
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: '[3] 当前更新的订阅链接'
+  type: ss
+  server: 127.0.0.1
+  port: '1080'
+  cipher: aes-128-gcm
+  password: 00000000-0000-0000-0000-000000000000
+  udp: true
+- name: '[3] 与您使用客户端不兼容'
+  type: ss
+  server: 127.0.0.1
+  port: '1080'
+  cipher: aes-128-gcm
+  password: 00000000-0000-0000-0000-000000000000
+  udp: true
+- name: '[3] 请复制 clashmeta/1.18 类型'
+  type: ss
+  server: 127.0.0.1
+  port: '1080'
+  cipher: aes-128-gcm
+  password: 00000000-0000-0000-0000-000000000000
+  udp: true
+- name: '[3] 的订阅链接'
+  type: ss
+  server: 127.0.0.1
+  port: '1080'
+  cipher: aes-128-gcm
+  password: 00000000-0000-0000-0000-000000000000
+  udp: true
+- name: '[3] 并导入客户端使用'
+  type: ss
+  server: 127.0.0.1
+  port: '1080'
+  cipher: aes-128-gcm
+  password: 00000000-0000-0000-0000-000000000000
+  udp: true
+- name: '[3] 或联系联系在线客服'
+  type: ss
+  server: 127.0.0.1
+  port: '1080'
+  cipher: aes-128-gcm
+  password: 00000000-0000-0000-0000-000000000000
+  udp: true
+- name: '[3] 以获取帮助'
+  type: ss
+  server: 127.0.0.1
+  port: '1080'
+  cipher: aes-128-gcm
+  password: 00000000-0000-0000-0000-000000000000
+  udp: true
+proxy-groups:
+- name: 聚合
+  type: select
+  proxies:
+  - DIRECT
+  - '[1] 🇭🇰 香港A01'
+  - '[1] 🇯🇵 日本A01 | IEPL'
+  - '[1] 🇭🇰 香港A02 | IEPL'
+  - '[1] 🇯🇵 日本A02 | IEPL'
+  - '[1] 🇭🇰 香港A03 | IEPL'
+  - '[1] 🇯🇵 日本A03 | IEPL'
+  - '[1] 🇭🇰 香港A04 | IEPL'
+  - '[1] 🇯🇵 日本A04 | IEPL'
+  - '[1] 🇭🇰 香港A05 | IEPL'
+  - '[1] 🇯🇵 日本A05 | 下载专用 | x0.01'
+  - '[1] 🇭🇰 香港A06 | x0.8'
+  - '[1] 🇯🇵 日本A06 | 下载专用 | x0.01'
+  - '[1] 🇭🇰 香港A07 | x0.8'
+  - '[1] 🇯🇵 日本A07 | IEPL'
+  - '[1] 🇭🇰 香港A08 | x0.8'
+  - '[1] 🇯🇵 日本A08 | IEPL'
+  - '[1] 🇭🇰 香港A09 | IEPL'
+  - '[1] 🇯🇵 日本A09 | IEPL'
+  - '[1] 🇭🇰 香港A10 | IEPL'
+  - '[1] 🇯🇵 日本A10 | IEPL'
+  - '[1] 🇭🇰 香港A11 | IEPL'
+  - '[1] 🇯🇵 日本A11 | IEPL'
+  - '[1] 🇸🇬 新加坡A01 | IEPL | x2'
+  - '[1] 🇸🇬 新加坡A02 | IEPL | x2'
+  - '[1] 🇸🇬 新加坡A03 | IEPL | x2'
+  - '[1] 🇨🇳 台湾A01 | IEPL | x2'
+  - '[1] 🇺🇲 美国A01 | IEPL | x1.5'
+  - '[1] 🇺🇲 美国A02 | IEPL | x1.5'
+  - '[1] 🇬🇧 英国A01'
+  - '[1] 🇦🇷 阿根廷A01'
+  - '[1] 🇷🇺 俄罗斯A01'
+  - '[1] 🇹🇷 土耳其A01'
+  - '[1] 🇰🇷 韩国A01'
+  - '[1] 🇮🇳 印度A01'
+  - '[1] 🇩🇪 德国A01'
+  - '[1] 🇨🇦 加拿大A01'
+  - '[1] 🇦🇺 澳大利亚A01'
+  - '[1] 🇫🇷 法国A01'
+  - '[1] 🇺🇦 乌克兰A01'
+  - '[1] 🇯🇵 免费-日本1-Ver.7'
+  - '[1] 🇯🇵 免费-日本2-Ver.8'
+  - '[1] 🇯🇵 免费-日本3-Ver.7'
+  - '[1] 🇯🇵 免费-日本4-Ver.8'
+  - '[1] 🇯🇵 免费-日本5-Ver.9'
+  - '[1] 🇯🇵 免费-日本6-Ver.8'
+  - '[1] 🇯🇵 免费-日本7-Ver.2'
+  - '[3] 当前更新的订阅链接'
+  - '[3] 与您使用客户端不兼容'
+  - '[3] 请复制 clashmeta/1.18 类型'
+  - '[3] 的订阅链接'
+  - '[3] 并导入客户端使用'
+  - '[3] 或联系联系在线客服'
+  - '[3] 以获取帮助'
+rules:
+- MATCH,聚合
